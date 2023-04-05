@@ -38,7 +38,7 @@ public:
         }
         else
         { 
-            rearNode -> next = newNode; 
+            rearNode->next = newNode; 
         }
 
         rearNode = newNode;
@@ -52,7 +52,7 @@ public:
         }
 
         Node* temp = frontNode;
-        frontNode = frontNode -> next;
+        frontNode = frontNode->next;
         delete temp;
 
         if(frontNode == nullptr)
@@ -67,7 +67,7 @@ public:
         {
             throw out_of_range("Queue is empty");
         }
-        return frontNode -> data;
+        return frontNode->data;
     }
 };
 
