@@ -47,7 +47,7 @@ void MaxMin<const char*>(int size, const char* A[], const char*& max, const char
 
     for(int i = 0; i < size; i++)
     {
-        if(strcmp(A[i], max) > 0)
+        if(strcmp(A[i], max) > -1)
         {
             max = A[i];
         }
